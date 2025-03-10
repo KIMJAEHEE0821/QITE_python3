@@ -30,7 +30,7 @@ def Hmoms(H_,psi_):
  phi_ = Hpsi(H_,psi_)
  ea   = np.vdot(psi_,phi_)
  ev   = np.vdot(phi_,phi_)
- return np.real(ea),np.real(ev-ea**2)
+ return np.real(ea),np.real(ev-ea**2)   
 
 # def print_Hamiltonian(H_):
 #  mu = 0
