@@ -30,17 +30,31 @@ d2f  = np.vectorize(d2)
 d23  = lambda t: 1 if t>1 else 0
 d23f = np.vectorize(d23)
 
+# # ---------------------------------------------------------- #
+
+# def computational_basis(nbit_):
+#  N=2**nbit_
+#  for i in range(N):
+#   print i,Psi2Str(Int2Bas(i,2,nbit_))
+
+# def pauli_basis(nbit_):
+#  M=4**nbit_
+#  for i in range(M):
+#   print i,Opp2Str(Int2Bas(i,4,nbit_))
+
+# # ---------------------------------------------------------- #
+
 # ---------------------------------------------------------- #
 
 def computational_basis(nbit_):
  N=2**nbit_
  for i in range(N):
-  print i,Psi2Str(Int2Bas(i,2,nbit_))
+  print(i, Psi2Str(Int2Bas(i,2,nbit_)))
 
 def pauli_basis(nbit_):
  M=4**nbit_
  for i in range(M):
-  print i,Opp2Str(Int2Bas(i,4,nbit_))
+  print(i, Opp2Str(Int2Bas(i,4,nbit_)))
 
 # ---------------------------------------------------------- #
 
